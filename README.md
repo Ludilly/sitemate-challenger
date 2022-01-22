@@ -14,6 +14,11 @@ heres the link for recording video https://www.loom.com/share/86e80c76180a4fac91
 
 Clone this repository and use Live Share extension from VSCode to visualize the application
 
+## What would I do better?
+
+I'd made the text button dinamic by creating a new parameters at button component, like "buttonTitle1" and "buttonTitle2", and at innerHtml.
+When I call button component I'd just put it the title parameters and it would work.
+
 
 If you have any issue, please feel free to contact me at my email: luiza.dilly@gmail.com
 
