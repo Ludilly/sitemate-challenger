@@ -59,3 +59,14 @@
   .modal:hover {
     opacity: 0.9;
   }
+
+  .modalBtn {
+    display: flex;
+    flex-direction: column;
+  }
+  #modalContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }

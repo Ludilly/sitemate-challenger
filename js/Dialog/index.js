@@ -21,6 +21,8 @@ function detachModalListeners(modalElm) {
 function toggleModal() {
 
   const currentState = modal.style.display;
+
+    // If modal is visible, hide it. Else, display it.
   
   if (currentState === 'none') {
     modal.style.display = 'block';
