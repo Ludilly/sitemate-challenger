@@ -1,4 +1,4 @@
-.modal {
+  .modal {
     position: fixed;
     left: 0;
     top: 0;
@@ -44,7 +44,7 @@
     padding: 20px;
   }
   
-  .modal .close_modal {
+  .modal {
     position: absolute;
     right: 10px;
     top: 10px;
@@ -56,6 +56,6 @@
     transition: opacity 0.2s ease;
   }
   
-  .modal .close_modal:hover {
+  .modal:hover {
     opacity: 0.9;
   }

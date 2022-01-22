@@ -1,20 +1,27 @@
-var btn = document.getElementById('modal_opener');
-var modal = document.querySelector('.modal');
+import creatingModalButton from '../Button/index.js';
+
+
+const btn = document.getElementById('modal_opener');
+const modal = document.querySelector('.modal');
+
 
 function attachModalListeners(modalElm) {
   modalElm.querySelector('.close_modal').addEventListener('click', toggleModal);
+  modalElm.querySelector('.confirm').addEventListener('click', toggleModal);
   modalElm.querySelector('.overlay').addEventListener('click', toggleModal);
+
 }
 
 function detachModalListeners(modalElm) {
   modalElm.querySelector('.close_modal').removeEventListener('click', toggleModal);
+  modalElm.querySelector('.confirm').removeEventListener('click', toggleModal);
   modalElm.querySelector('.overlay').removeEventListener('click', toggleModal);
 }
 
 function toggleModal() {
-  var currentState = modal.style.display;
 
-  // If modal is visible, hide it. Else, display it.
+  const currentState = modal.style.display;
+  
   if (currentState === 'none') {
     modal.style.display = 'block';
     attachModalListeners(modal);
@@ -25,3 +32,7 @@ function toggleModal() {
 }
 
 btn.addEventListener('click', toggleModal);
+
+window.onload = function onload() {
+  creatingModalButton('You clicked "Cancel"', 'You clicked "Confirm"');
+}
